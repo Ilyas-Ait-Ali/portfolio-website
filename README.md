@@ -1,12 +1,41 @@
-# React + Vite
+# 🛠️ Personal Portfolio Website (In Progress)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website built using **React + Vite**.  
+It will showcase my projects, experience, resume, and contact information.
 
-Currently, two official plugins are available:
+🔧 **Status:** In Progress  
+🚀 **Tech Stack:** React, Vite, (TailwindCSS coming soon), deployed via Netlify  
+📁 **Live Link:** Coming soon
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🔍 Features Planned
+- Home page with brief intro
+- Project section with live links and GitHub
+- Resume download
+- Contact form (or direct links to email/LinkedIn)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 Getting Started (for dev use)
+```bash
+npm install
+npm run dev
+```
+
+## 📌 License
+This project is licensed under the MIT License.
+
+You are free to use, modify, and distribute this software with minimal restrictions.  
+Just retain the original license and disclaimer in any copies or substantial portions of the code.
+
+SPDX-License-Identifier: MIT
+
+🛡️ Why MIT?
+I chose the MIT License because it reflects my goal with this portfolio: to share code freely and professionally.
+
+This project is intended to be a transparent example of my skills, structure, and design thinking.  
+I’m happy if others learn from it or even reuse parts of it without worrying about legal complexity.
+
+MIT allows open collaboration without forcing others to open-source their own work in return.  
+It keeps things flexible and frictionless, just like good software should be.
