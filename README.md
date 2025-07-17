@@ -5,7 +5,7 @@ It will showcase my projects, experience, resume, and contact information.
 
 🔧 **Status:** In Progress  
 🚀 **Tech Stack:** React, Vite, (TailwindCSS coming soon), deployed via Netlify  
-📁 **Live Link:** Coming soon
+📁 **Live Link:** https://ilyas-ait-ali-website.netlify.app
 
 ---
 
