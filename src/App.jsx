@@ -8,14 +8,16 @@ import Resume from "./pages/Resume";
 export default function App() {
   return (
     <Router>
-      <Navbar />
-      <div className="pt-20 px-4 min-h-screen bg-gray-900 text-white">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+      <div className="bg-gray-900 text-white min-h-screen flex flex-col">
+        <Navbar />
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
       </div>
     </Router>
   );

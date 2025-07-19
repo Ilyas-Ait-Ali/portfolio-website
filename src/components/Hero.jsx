@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center text-center px-4">
+    <section className="h-[calc(100vh-4rem)] flex flex-col justify-center items-center text-center px-4">
       <motion.h1
         className="text-4xl md:text-6xl font-bold mb-4"
         initial={{ opacity: 0, y: -30 }}

@@ -23,7 +23,7 @@ const socialLinks = [
 export default function Contact() {
   return (
     <motion.section
-      className="min-h-screen flex flex-col items-center justify-center px-4 text-white text-center"
+      className="h-[calc(100vh-4rem)] flex flex-col items-center justify-center px-4 text-white text-center"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
