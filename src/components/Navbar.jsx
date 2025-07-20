@@ -29,24 +29,32 @@ export default function Navbar() {
 
       <div className="absolute right-4 inset-y-0 flex items-center gap-2">
         {/* Language toggle */}
-        <div className="flex items-center bg-gray-700 rounded-full p-1 text-sm shadow relative w-20 h-8">
-          <button
-            onClick={() => setLanguage("en")}
-            className={`w-1/2 h-full rounded-full transition-all duration-300 ${
-              language === "en" ? "bg-blue-500 text-white" : "text-gray-300"
+        <div
+          onClick={toggleLanguage}
+          className="relative w-20 h-8 bg-gray-700 rounded-full flex items-center justify-between px-1 cursor-pointer transition-colors duration-300 hover:bg-gray-600 shadow-inner"
+          title="Switch Language"
+        >
+          <div
+            className={`absolute top-0 left-0 w-1/2 h-full rounded-full bg-white transition-transform duration-300 z-0 ${
+              language === 'en' ? 'translate-x-0' : 'translate-x-full'
+            }`}
+          />
+          <span
+            className={`w-1/2 text-xs font-semibold text-center z-10 transition-colors duration-300 ${
+              language === 'en' ? 'text-gray-800' : 'text-white'
             }`}
           >
             EN
-          </button>
-          <button
-            onClick={() => setLanguage("fr")}
-            className={`w-1/2 h-full rounded-full transition-all duration-300 ${
-              language === "fr" ? "bg-blue-500 text-white" : "text-gray-300"
+          </span>
+          <span
+            className={`w-1/2 text-xs font-semibold text-center z-10 transition-colors duration-300 ${
+              language === 'fr' ? 'text-gray-800' : 'text-white'
             }`}
           >
             FR
-          </button>
+          </span>
         </div>
+
 
 
         {/* Theme toggle */}
