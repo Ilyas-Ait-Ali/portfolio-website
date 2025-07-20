@@ -7,7 +7,7 @@ export const home = {
   },
   fr: {
     greeting: "Salut, je suis",
-    subtitle: "Je crée des logiciels intelligents et beaux, avec un but.",
+    subtitle: "Je crée des logiciels intelligents et élégants, pensés avec intention.",
     viewProjects: "Voir les projets",
     downloadResume: "Télécharger le CV",
   },
