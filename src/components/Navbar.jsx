@@ -2,10 +2,12 @@ import { Link } from "react-router-dom";
 import { Moon, Sun } from "lucide-react";
 import { useState } from "react";
 import { useLang } from "../contexts/LanguageContext";
+import { navbar } from "../i18n/navbar";
 
 export default function Navbar() {
   const [dark, setDark] = useState(true);
   const { lang, toggleLang } = useLang();
+  const t = navbar[lang];
 
   const toggleTheme = () => {
     document.documentElement.classList.toggle("dark");
@@ -15,10 +17,10 @@ export default function Navbar() {
   return (
     <nav className="bg-gray-800 text-white shadow-md px-6 py-4 fixed w-full top-0 z-10 flex justify-center items-center">
       <ul className="flex gap-6 text-lg font-medium">
-        <li><Link to="/" className="hover:text-blue-400">{lang === "en" ? "Home" : "Accueil"}</Link></li>
-        <li><Link to="/projects" className="hover:text-blue-400">{lang === "en" ? "Projects" : "Projets"}</Link></li>
-        <li><Link to="/resume" className="hover:text-blue-400">{lang === "en" ? "Resume" : "CV"}</Link></li>
-        <li><Link to="/contact" className="hover:text-blue-400">{lang === "en" ? "Contact" : "Contact"}</Link></li>
+        <li><Link to="/" className="hover:text-blue-400">{t.home}</Link></li>
+        <li><Link to="/projects" className="hover:text-blue-400">{t.projects}</Link></li>
+        <li><Link to="/resume" className="hover:text-blue-400">{t.resume}</Link></li>
+        <li><Link to="/contact" className="hover:text-blue-400">{t.contact}</Link></li>
       </ul>
 
       <div className="absolute right-4 inset-y-0 flex items-center gap-2">
