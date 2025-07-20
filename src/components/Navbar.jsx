@@ -1,61 +1,53 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Moon, Sun, Languages } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
+import { useState } from "react";
 import { useLang } from "../contexts/LanguageContext";
 
 export default function Navbar() {
   const [dark, setDark] = useState(true);
-  const [language, setLanguage] = useState("en");
+  const { lang, toggleLang } = useLang();
 
   const toggleTheme = () => {
     document.documentElement.classList.toggle("dark");
     setDark(!dark);
   };
 
-  const toggleLanguage = () => {
-    setLanguage((prev) => (prev === "en" ? "fr" : "en"));
-    
-  };
-
-
   return (
     <nav className="bg-gray-800 text-white shadow-md px-6 py-4 fixed w-full top-0 z-10 flex justify-center items-center">
       <ul className="flex gap-6 text-lg font-medium">
-        <li><Link to="/" className="hover:text-blue-400">Home</Link></li>
-        <li><Link to="/projects" className="hover:text-blue-400">Projects</Link></li>
-        <li><Link to="/resume" className="hover:text-blue-400">Resume</Link></li>
-        <li><Link to="/contact" className="hover:text-blue-400">Contact</Link></li>
+        <li><Link to="/" className="hover:text-blue-400">{lang === "en" ? "Home" : "Accueil"}</Link></li>
+        <li><Link to="/projects" className="hover:text-blue-400">{lang === "en" ? "Projects" : "Projets"}</Link></li>
+        <li><Link to="/resume" className="hover:text-blue-400">{lang === "en" ? "Resume" : "CV"}</Link></li>
+        <li><Link to="/contact" className="hover:text-blue-400">{lang === "en" ? "Contact" : "Contact"}</Link></li>
       </ul>
 
       <div className="absolute right-4 inset-y-0 flex items-center gap-2">
         {/* Language toggle */}
         <div
-          onClick={toggleLanguage}
+          onClick={toggleLang}
           className="relative w-20 h-8 bg-gray-700 rounded-full flex items-center justify-between px-1 cursor-pointer transition-colors duration-300 hover:bg-gray-600 shadow-inner"
           title="Switch Language"
         >
           <div
             className={`absolute top-0 left-0 w-1/2 h-full rounded-full bg-white transition-transform duration-300 z-0 ${
-              language === 'en' ? 'translate-x-0' : 'translate-x-full'
+              lang === "en" ? "translate-x-0" : "translate-x-full"
             }`}
           />
           <span
             className={`w-1/2 text-xs font-semibold text-center z-10 transition-colors duration-300 ${
-              language === 'en' ? 'text-gray-800' : 'text-white'
+              lang === "en" ? "text-gray-800" : "text-white"
             }`}
           >
             EN
           </span>
           <span
             className={`w-1/2 text-xs font-semibold text-center z-10 transition-colors duration-300 ${
-              language === 'fr' ? 'text-gray-800' : 'text-white'
+              lang === "fr" ? "text-gray-800" : "text-white"
             }`}
           >
             FR
           </span>
         </div>
-
-
 
         {/* Theme toggle */}
         <button
@@ -71,7 +63,6 @@ export default function Navbar() {
             )}
           </div>
         </button>
-
       </div>
     </nav>
   );
