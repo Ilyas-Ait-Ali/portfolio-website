@@ -29,7 +29,7 @@ export default function Contact() {
 
   return (
     <motion.section
-      className="h-[calc(100vh-4rem)] flex flex-col items-center justify-center px-4 text-white text-center"
+      className="h-[calc(100vh-4rem)] bg-white dark:bg-gray-900 flex flex-col items-center justify-center px-4 text-center transition-colors duration-300"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
@@ -38,21 +38,21 @@ export default function Contact() {
       <AnimatePresence mode="wait">
         <motion.h1
           key={`heading-${key}`}
-          className="text-4xl md:text-5xl font-bold mb-6"
+          className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 10 }}
           transition={{ duration: 0.3 }}
         >
-          <span className="text-white">{t.headingStart} </span>
-          <span className="text-blue-500">{t.headingEnd}</span>
+          <span>{t.headingStart} </span>
+          <span className="text-blue-700 dark:text-blue-500">{t.headingEnd}</span>
         </motion.h1>
       </AnimatePresence>
 
       <AnimatePresence mode="wait">
         <motion.p
           key={`paragraph-${key}`}
-          className="text-lg text-gray-400 max-w-xl mb-10"
+          className="text-lg text-gray-600 dark:text-gray-400 max-w-xl mb-10"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -72,7 +72,7 @@ export default function Contact() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-blue-400 transition"
+                  className="hover:text-blue-700 dark:hover:text-blue-400 transition"
                   whileHover={{ scale: 1.1 }}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -84,7 +84,7 @@ export default function Contact() {
               </Tooltip.Trigger>
               <Tooltip.Portal>
                 <Tooltip.Content
-                  className="bg-gray-700 text-white px-2 py-1 rounded text-sm"
+                  className="bg-gray-800 text-white dark:bg-gray-700 px-2 py-1 rounded text-sm"
                   side="top"
                   sideOffset={6}
                 >
@@ -100,7 +100,7 @@ export default function Contact() {
         <motion.a
           key={`button-${key}`}
           href="mailto:ilyasgameraa@gmail.com"
-          className="mt-12 inline-block bg-blue-500 text-white px-5 py-2 rounded hover:bg-blue-600 transition"
+          className="mt-12 inline-block bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded dark:bg-blue-500 dark:hover:bg-blue-600 transition"
           initial={{ opacity: 0, y: 5 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -5 }}
