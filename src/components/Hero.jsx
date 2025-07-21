@@ -8,24 +8,24 @@ export default function Hero() {
   const t = home[lang];
 
   return (
-    <section className="h-[calc(100vh-4rem)] flex flex-col justify-center items-center text-center px-4">
+    <section className="h-[calc(100vh-4rem)] bg-white dark:bg-gray-900 flex flex-col justify-center items-center text-center px-4 transition-colors duration-300">
       <AnimatePresence mode="wait">
         <motion.h1
           key={`hero-heading-${lang}`}
-          className="text-4xl md:text-6xl font-bold mb-4"
+          className="text-4xl md:text-6xl font-bold mb-4 text-gray-900 dark:text-white"
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.4 }}
         >
-          {t.greeting} <span className="text-blue-500">Ilyas</span>.
+          {t.greeting} <span className="text-blue-700 dark:text-blue-500">Ilyas</span>.
         </motion.h1>
       </AnimatePresence>
 
       <AnimatePresence mode="wait">
         <motion.h2
           key={`hero-subtitle-${lang}`}
-          className="text-lg md:text-2xl text-gray-400 mb-6"
+          className="text-lg md:text-2xl text-gray-600 dark:text-gray-400 mb-6"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -46,13 +46,13 @@ export default function Hero() {
         >
           <Link
             to="/projects"
-            className="px-6 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition"
+            className="px-6 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 dark:hover:bg-blue-500 transition"
           >
             {t.viewProjects}
           </Link>
           <a
             href="/resume.pdf"
-            className="px-6 py-2 rounded-md border border-white text-white hover:bg-white hover:text-black transition"
+            className="px-6 py-2 rounded-md border border-gray-300 text-gray-800 hover:bg-gray-800 hover:text-white dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black transition"
           >
             {t.downloadResume}
           </a>
