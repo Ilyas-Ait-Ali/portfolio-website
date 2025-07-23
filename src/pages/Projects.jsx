@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useLang } from "../contexts/LanguageContext";
 import projects from "../i18n/projects";
 
@@ -9,6 +10,7 @@ export default function Projects() {
 
   const projectList = [
     {
+      id: "suppliespro",
       title: t.suppliesPro.title,
       description: t.suppliesPro.description,
       stack: ["React", "React Router", "JavaScript", "CSS", "Font Awesome", "GitHub Pages"],
@@ -56,7 +58,7 @@ export default function Projects() {
               ))}
             </div>
 
-            <div className="flex gap-4 mt-auto">
+            <div className="flex flex-wrap gap-4 mt-auto">
               <a
                 href={project.live}
                 target="_blank"
@@ -75,6 +77,13 @@ export default function Projects() {
                 <Github size={16} />
                 {t.suppliesPro.github}
               </a>
+              <Link
+                to={`/projects/${project.id}`}
+                className="flex items-center gap-1 text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                <ArrowRight size={16} />
+                {t.suppliesPro.viewMore}
+              </Link>
             </div>
           </motion.div>
         ))}
