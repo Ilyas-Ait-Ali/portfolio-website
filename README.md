@@ -1,41 +1,64 @@
-# 🛠️ Personal Portfolio Website (In Progress)
+# 🛠️ Personal Portfolio Website
 
-This is my personal portfolio website built using **React + Vite**.  
-It will showcase my projects, experience, resume, and contact information.
-
-🔧 **Status:** In Progress  
-🚀 **Tech Stack:** React, Vite, (TailwindCSS coming soon), deployed via Netlify  
-📁 **Live Link:** https://ilyas-ait-ali-website.netlify.app
+This is my personal developer portfolio built using **React** and **Vite**.  
+It showcases my **projects**, **experience**, **resume**, and **contact information** in a clean, bilingual interface (English/French).
 
 ---
 
-## 🔍 Features Planned
-- Home page with brief intro
-- Project section with live links and GitHub
-- Resume download
-- Contact form (or direct links to email/LinkedIn)
+## 🔧 Status
+**In Progress** — Actively iterating and improving features, accessibility, and design.
 
 ---
 
-## 📦 Getting Started (for dev use)
+## 🚀 Tech Stack
+- **React 18**
+- **Vite**
+- **Tailwind CSS** (coming soon)
+- **Framer Motion** (for smooth animations)
+- **Lucide Icons**
+- **Radix UI** (tooltips)
+- **React Router**
+- **i18n with JS files per page**
+- **Deployed via Netlify**
+
+---
+
+## 🌐 Live Demo
+[**👉 View Live Site**](https://ilyas-ait-ali-website.netlify.app)
+
+---
+
+## 🔍 Key Features
+- **Home**: Animated intro with bilingual toggle and theme switch
+- **Projects**: Descriptive cards with tech stack, GitHub, Live Demo, and "View More"
+- **Project Details Page**: Dedicated page per project with animated language switching
+- **Resume**: Downloadable PDF
+- **Contact**: Email, GitHub, LinkedIn with tooltips
+
+---
+
+## 📦 Getting Started (for development)
+
 ```bash
 npm install
 npm run dev
 ```
+Visit http://localhost:5173 in your browser.
 
-## 📌 License
+---
+
+## 📄 License
 This project is licensed under the MIT License.
-
-You are free to use, modify, and distribute this software with minimal restrictions.  
-Just retain the original license and disclaimer in any copies or substantial portions of the code.
-
+- You are free to use, modify, and distribute this software with minimal restrictions.
+- Just retain the original license and disclaimer in any copies or substantial portions of the code.
 SPDX-License-Identifier: MIT
 
-🛡️ Why MIT?
-I chose the MIT License because it reflects my goal with this portfolio: to share code freely and professionally.
+---
 
-This project is intended to be a transparent example of my skills, structure, and design thinking.  
-I’m happy if others learn from it or even reuse parts of it without worrying about legal complexity.
+## 🛡️ Why MIT?
+- I chose the MIT License because it reflects the goal of this portfolio:
+to share clean, practical, and professional code openly.
+- It supports learning, reusability, and contribution without legal friction.
+MIT keeps collaboration flexible and frictionless, just like good software should be.
 
-MIT allows open collaboration without forcing others to open-source their own work in return.  
-It keeps things flexible and frictionless, just like good software should be.
+✨ Made with care by Ilyas Ait Ali
