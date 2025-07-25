@@ -50,12 +50,6 @@ export default function Home() {
           >
             {t.viewProjects}
           </Link>
-          <a
-            href="/resume.pdf"
-            className="px-6 py-2 rounded-md border border-gray-300 text-gray-800 hover:bg-gray-800 hover:text-white dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black transition"
-          >
-            {t.downloadResume}
-          </a>
         </motion.div>
       </AnimatePresence>
     </section>
