@@ -13,8 +13,8 @@ export default function Navbar() {
     <nav className="bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-white shadow-sm px-6 py-4 fixed w-full top-0 z-10 flex justify-center items-center transition-colors duration-300">
       <ul className="flex gap-6 text-lg font-medium">
         <li><Link to="/" className="hover:text-blue-700 dark:hover:text-blue-400">{t.home}</Link></li>
+            <Link to="/about" className="hover:text-blue-700 dark:hover:text-blue-400">{t.about}</Link>
         <li><Link to="/projects" className="hover:text-blue-700 dark:hover:text-blue-400">{t.projects}</Link></li>
-        <li><Link to="/resume" className="hover:text-blue-700 dark:hover:text-blue-400">{t.resume}</Link></li>
         <li><Link to="/contact" className="hover:text-blue-700 dark:hover:text-blue-400">{t.contact}</Link></li>
       </ul>
 

@@ -1,14 +1,16 @@
-export const navbar = {
+const navbar = {
   en: {
     home: "Home",
+    about: "About",
     projects: "Projects",
-    resume: "Resume",
     contact: "Contact",
   },
   fr: {
     home: "Accueil",
+    about: "À propos",
     projects: "Projets",
-    resume: "CV",
     contact: "Contact",
   },
 };
+
+export { navbar };
