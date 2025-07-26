@@ -1,6 +1,5 @@
-import { motion } from "framer-motion";
-import { ExternalLink, Github, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+import { ExternalLink, Github } from "lucide-react";
 import { useLang } from "../contexts/LanguageContext";
 import projects from "../i18n/projects";
 
@@ -20,24 +19,38 @@ export default function Projects() {
   ];
 
   return (
-    <section className="px-6 py-16 min-h-screen transition-colors duration-300">
-      <motion.h1
-        className="text-4xl font-bold mt-4 mb-12 text-center text-black dark:text-white"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
+    <motion.section
+      className="px-6 py-16 min-h-screen transition-colors duration-300"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4 }}
+    >
+      <AnimatePresence mode="wait">
+        <ProjectSection key={lang} t={t} projectList={projectList} />
+      </AnimatePresence>
+    </motion.section>
+  );
+}
+
+function ProjectSection({ t, projectList }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.4 }}
+    >
+      <h1 className="text-4xl font-bold mt-4 mb-12 text-center text-black dark:text-white">
         {t.heading}
-      </motion.h1>
+      </h1>
 
       <div className="grid gap-8 md:grid-cols-2">
         {projectList.map((project, idx) => (
           <motion.div
             key={project.title}
             className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 flex flex-col justify-between transition-colors duration-300"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: idx * 0.1 }}
           >
             <h2 className="text-2xl font-semibold mb-2 text-gray-900 dark:text-white">
@@ -77,17 +90,10 @@ export default function Projects() {
                 <Github size={16} />
                 {t.suppliesPro.github}
               </a>
-              <Link
-                to={`/projects/${project.id}`}
-                className="flex items-center gap-1 text-blue-600 dark:text-blue-400 hover:underline"
-              >
-                <ArrowRight size={16} />
-                {t.suppliesPro.viewMore}
-              </Link>
             </div>
           </motion.div>
         ))}
       </div>
-    </section>
+    </motion.div>
   );
 }
