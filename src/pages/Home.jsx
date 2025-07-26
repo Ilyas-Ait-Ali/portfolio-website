@@ -45,10 +45,10 @@ export default function Home() {
           transition={{ duration: 0.4, delay: 0.2 }}
         >
           <Link
-            to="/projects"
+            to="/about"
             className="px-6 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 dark:hover:bg-blue-500 transition"
           >
-            {t.viewProjects}
+            {t.learnMore}
           </Link>
         </motion.div>
       </AnimatePresence>
