@@ -5,35 +5,19 @@ It showcases my **projects**, **experience**, **resume**, and **contact informat
 
 ---
 
-## 🔧 Status
-**In Progress** — Actively iterating and improving features, accessibility, and design.
-
----
-
-## 🚀 Tech Stack
-- **React 18**
-- **Vite**
-- **Tailwind CSS** (coming soon)
-- **Framer Motion** (for smooth animations)
-- **Lucide Icons**
-- **Radix UI** (tooltips)
-- **React Router**
-- **i18n with JS files per page**
-- **Deployed via Netlify**
-
----
-
 ## 🌐 Live Demo
 [**👉 View Live Site**](https://ilyas-ait-ali-website.netlify.app)
 
 ---
 
-## 🔍 Key Features
-- **Home**: Animated intro with bilingual toggle and theme switch
-- **Projects**: Descriptive cards with tech stack, GitHub, Live Demo, and "View More"
-- **Project Details Page**: Dedicated page per project with animated language switching
-- **Resume**: Downloadable PDF
-- **Contact**: Email, GitHub, LinkedIn with tooltips
+## 🚀 Tech Stack
+- **React 19**
+- **Vite**
+- **Tailwind CSS**
+- **Framer Motion**
+- **Lucide React**
+- **React Router**
+- **Deployed via Netlify**
 
 ---
 
