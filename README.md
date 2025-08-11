@@ -6,7 +6,9 @@ It showcases my **projects**, **experience**, **resume**, and **contact informat
 ---
 
 ## 🌐 Live Demo
-[**👉 View Live Site**](https://ilyas-ait-ali-website.netlify.app)
+👉 [Live Site](https://ilyas-ait-ali-website.netlify.app)
+
+![Demo Screenshot](assets/demo.png)
 
 ---
 
