@@ -8,15 +8,40 @@ export default function Projects() {
   const t = projects[lang];
 
   const projectList = [
-    {
-      id: "suppliespro",
-      title: t.suppliesPro.title,
-      description: t.suppliesPro.description,
-      stack: ["React", "React Router", "JavaScript", "CSS", "Font Awesome", "GitHub Pages"],
-      live: "https://Ilyas-Ait-Ali.github.io/SuppliesPro-Website",
-      repo: "https://github.com/Ilyas-Ait-Ali/SuppliesPro-Website",
-    },
-  ];
+  {
+    id: "exptrack",
+    title: t.expTrack.title,
+    description: t.expTrack.description,
+    stack: ["FastAPI", "PostgreSQL", "React", "Pandas", "Statsmodels", "Docker"],
+    live: null,
+    repo: "https://github.com/Ilyas-Ait-Ali/ExpTrack",
+  },
+  {
+    id: "anomalyexpenses",
+    title: t.anomalyExpenses.title,
+    description: t.anomalyExpenses.description,
+    stack: ["Python", "Scikit-learn", "Streamlit", "Pandas", "Matplotlib"],
+    live: "https://anomaly-expenses.streamlit.app",
+    repo: "https://github.com/Ilyas-Ait-Ali/Anomaly-Expenses",
+  },
+  {
+    id: "ehotels",
+    title: t.eHotels.title,
+    description: t.eHotels.description,
+    stack: ["Flask", "PostgreSQL", "SQLAlchemy", "Bootstrap"],
+    live: null,
+    repo: "https://github.com/Ilyas-Ait-Ali/eHotels",
+  },
+  {
+    id: "suppliespro",
+    title: t.suppliesPro.title,
+    description: t.suppliesPro.description,
+    stack: ["React", "React Router", "JavaScript", "CSS", "Font Awesome", "GitHub Pages"],
+    live: "https://Ilyas-Ait-Ali.github.io/SuppliesPro-Website",
+    repo: "https://github.com/Ilyas-Ait-Ali/SuppliesPro-Website",
+  },
+];
+
 
   return (
     <motion.section
