@@ -97,15 +97,18 @@ function ProjectSection({ t, projectList }) {
             </div>
 
             <div className="flex flex-wrap gap-4 mt-auto">
-              <a
-                href={project.live}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1 text-blue-600 dark:text-blue-400 hover:underline"
-              >
-                <ExternalLink size={16} />
-                {t.suppliesPro.live}
-              </a>
+              {project.live ? (
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  <ExternalLink size={16} />
+                  {t.suppliesPro.live}
+                </a>
+              ) : null}
+
               <a
                 href={project.repo}
                 target="_blank"
@@ -116,6 +119,7 @@ function ProjectSection({ t, projectList }) {
                 {t.suppliesPro.github}
               </a>
             </div>
+
           </motion.div>
         ))}
       </div>
