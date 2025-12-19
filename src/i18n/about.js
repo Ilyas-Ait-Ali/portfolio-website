@@ -5,16 +5,35 @@ const about = {
       "I'm a bilingual software engineering student at the University of Ottawa with a passion for intelligent systems, clean architecture, and data-driven design. I enjoy building elegant tools that solve real problem. Whether through dashboards, automation, or machine learning workflows.",
     skillsTitle: "Skills",
     skills: {
-      Languages: ["Python", "R", "SQL", "JavaScript", "Java"],
-      Frameworks: ["React", "Flask", "TensorFlow", "PyTorch", "Scikit-Learn"],
-      Tools: ["Power BI", "Git", "Docker", "AWS", "Azure"],
-      Libraries: ["Pandas", "NumPy", "Matplotlib", "XGBoost"],
-      Other: ["Bilingual: English & French"],
+      "Languages": ["Python", "SQL", "JavaScript", "Java", "R"],
+
+      "Libraries & Frameworks": [
+        "React",
+        "TensorFlow",
+        "PyTorch",
+        "Scikit-Learn",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+      ],
+
+      "Tools & Platforms": [
+        "Git",
+        "Docker",
+        "Power BI",
+        "AWS (EC2, S3)",
+        "Azure",
+        "Kubernetes",
+      ],
+
+      "Other": ["Fluent in English & French (Bilingual)"],
     },
+
     experienceTitle: "Work Experience",
     experience: [
       {
-        role: "Data & Observability Engineer Intern",
+        role: "Data & Observability Engineer",
+        type: "Co-op/Internship",
         company: "Deloitte",
         duration: "Winter 2024",
         bullets: [
@@ -25,7 +44,8 @@ const about = {
         tech: ["Java", "Python", "AppDynamics", "UML", "VS Code", "Eclipse"],
       },
       {
-        role: "Data Analyst Intern",
+        role: "Data Analyst",
+        type: "Co-op/Internship",
         company: "Transportation Safety Board of Canada",
         duration: "Fall 2024",
         bullets: [
@@ -36,7 +56,8 @@ const about = {
         tech: ["Power BI", "Excel", "SharePoint", "Data Modeling"],
       },
       {
-        role: "Data Analyst (Part-time)",
+        role: "Data Analyst",
+        type: "Part-time",
         company: "Transportation Safety Board of Canada",
         duration: "Winter 2025",
         bullets: [
@@ -47,7 +68,8 @@ const about = {
         tech: ["SharePoint", "Power Apps", "Excel", "Documentation"],
       },
       {
-        role: "Data Analyst Intern",
+        role: "Data Analyst",
+        type: "Co-op/Internship",
         company: "Transportation Safety Board of Canada",
         duration: "Summer 2025",
         bullets: [
@@ -56,6 +78,18 @@ const about = {
           "Used Power Query to manipulate datasets for internal needs",
         ],
         tech: ["Power BI", "Power Apps", "Excel", "Power Query", "Version Control"],
+      },
+      {
+        role: "Teaching Assistant - Python",
+        type: "Part-time",
+        company: "University of Ottawa",
+        duration: "Fall 2025 - Winter 2026",
+        bullets: [
+          "Led weekly Python lab sessions (ITI 1520), explaining core programming concepts and debugging strategies",
+          "Supported students during office hours by reviewing code and guiding problem-solving approaches",
+          "Collaborated with the instructor and TA team to ensure consistent grading and clear lab instructions",
+        ],
+        tech: ["Python", "Teaching", "Debugging", "Communication", "Mentoring"],
       },
     ],
     viewProjects: "View Projects",
@@ -67,16 +101,35 @@ const about = {
       "Je suis un étudiant bilingue en génie logiciel à l’Université d’Ottawa, passionné par les systèmes intelligents, les architectures soignées et les solutions pilotées par les données. J’aime créer des outils élégants qui résolvent des problèmes concrets. Que ce soit par des tableaux de bord, l’automatisation ou des workflows en machine learning.",
     skillsTitle: "Compétences",
     skills: {
-      Langages: ["Python", "R", "SQL", "JavaScript", "Java"],
-      Cadres: ["React", "Flask", "TensorFlow", "PyTorch", "Scikit-Learn"],
-      Outils: ["Power BI", "Git", "Docker", "AWS", "Azure"],
-      Librairies: ["Pandas", "NumPy", "Matplotlib", "XGBoost"],
-      Autres: ["Bilingue : anglais et français"],
+      "Langages": ["Python", "SQL", "JavaScript", "Java", "R"],
+
+      "Bibliothèques & Frameworks": [
+        "React",
+        "TensorFlow",
+        "PyTorch",
+        "Scikit-Learn",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+      ],
+
+      "Outils & Plateformes": [
+        "Git",
+        "Docker",
+        "Power BI",
+        "AWS (EC2, S3)",
+        "Azure",
+        "Kubernetes",
+      ],
+
+      "Autres": ["Bilingue : anglais et français"],
     },
+
     experienceTitle: "Expérience professionnelle",
     experience: [
       {
-        role: "Stagiaire Ingénieur en Données & Observabilité",
+        role: "Ingénieur en Données & Observabilité",
+        type: "Stage coop",
         company: "Deloitte",
         duration: "Hiver 2024",
         bullets: [
@@ -87,7 +140,8 @@ const about = {
         tech: ["Java", "Python", "AppDynamics", "UML", "VS Code", "Eclipse"],
       },
       {
-        role: "Stagiaire Analyste de Données",
+        role: "Analyste de Données",
+        type: "Stage coop",
         company: "Bureau de la sécurité des transports du Canada",
         duration: "Automne 2024",
         bullets: [
@@ -98,7 +152,8 @@ const about = {
         tech: ["Power BI", "Excel", "SharePoint", "Modélisation de données"],
       },
       {
-        role: "Analyste de Données (Temps partiel)",
+        role: "Analyste de Données",
+        type: "Temps partiel",
         company: "Bureau de la sécurité des transports du Canada",
         duration: "Hiver 2025",
         bullets: [
@@ -109,7 +164,8 @@ const about = {
         tech: ["SharePoint", "Power Apps", "Excel", "Documentation"],
       },
       {
-        role: "Stagiaire Analyste de Données",
+        role: "Analyste de Données",
+        type: "Stage coop",
         company: "Bureau de la sécurité des transports du Canada",
         duration: "Été 2025",
         bullets: [
@@ -118,6 +174,18 @@ const about = {
           "Manipulé les données avec Power Query pour les besoins internes",
         ],
         tech: ["Power BI", "Power Apps", "Excel", "Power Query", "Contrôle de version"],
+      },
+      {
+        role: "Assistant d’enseignement - Python",
+        type: "Temps partiel",
+        company: "Université d’Ottawa",
+        duration: "Automne 2025 - Hiver 2026",
+        bullets: [
+          "Animé des laboratoires hebdomadaires de Python (ITI 1520) en expliquant les concepts clés et les stratégies de débogage",
+          "Soutenu les étudiants en heures de bureau en révisant leur code et en guidant leur démarche de résolution",
+          "Collaboré avec le professeur et l’équipe de TA pour assurer une correction cohérente et des consignes claires",
+        ],
+        tech: ["Python", "Enseignement", "Débogage", "Communication", "Mentorat"],
       },
     ],
     viewProjects: "Voir les projets",
