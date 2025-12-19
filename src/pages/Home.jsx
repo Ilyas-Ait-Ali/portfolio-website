@@ -8,7 +8,10 @@ export default function Home() {
   const t = home[lang];
 
   return (
-    <section className="h-[calc(100vh-4rem)] bg-white dark:bg-gray-900 flex flex-col justify-center items-center text-center px-4 transition-colors duration-300">
+    <section className="relative h-[calc(100vh-4rem)] bg-slate-50 dark:bg-gray-900 flex flex-col justify-center items-center text-center px-4 transition-colors duration-300 overflow-hidden">
+
+      <div className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[900px] h-[900px] rounded-full bg-blue-500/12 blur-3xl dark:bg-blue-400/10" />
+      <div className="pointer-events-none absolute inset-0 opacity-[0.06] dark:opacity-[0.03] bg-[radial-gradient(circle_at_1px_1px,rgba(0,0,0,0.35)_1px,transparent_1px)] [background-size:18px_18px]" />
       <AnimatePresence mode="wait">
         <motion.h1
           key={`hero-heading-${lang}`}
