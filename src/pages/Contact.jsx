@@ -22,7 +22,7 @@ export default function Contact() {
     },
     {
       icon: <Linkedin size={28} />,
-      href: "https://www.linkedin.com/in/ilyas-ait-ali-467bb819b",
+      href: "https://www.linkedin.com/in/ilyas-ait-ali",
       label: t.linkedin,
     },
   ];
