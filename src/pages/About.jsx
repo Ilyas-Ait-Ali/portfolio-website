@@ -1,7 +1,3 @@
-// About.jsx (2-column desktop layout: centered About Me, left sticky Skills, right Experience timeline)
-// Update: adds job.type badge (Co-op / Part-time) instead of putting it in the role title
-// Logos: public/logos/deloitte.jpg and public/logos/tsb.jpg
-
 import { motion, AnimatePresence } from "framer-motion";
 import { useLang } from "../contexts/LanguageContext";
 import about from "../i18n/about";
