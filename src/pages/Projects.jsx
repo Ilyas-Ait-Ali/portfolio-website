@@ -25,6 +25,14 @@ export default function Projects() {
       repo: "https://github.com/Ilyas-Ait-Ali/Anomaly-Expenses",
     },
     {
+      id: "shwstrivia",
+      title: t.shwsTrivia.title,
+      description: t.shwsTrivia.description,
+      stack: ["React", "Vite", "TypeScript", "Next.js", "Tailwind CSS"],
+      live: "https://shws-trivia-challenge-ilyas.vercel.app",
+      repo: "https://github.com/Ilyas-Ait-Ali/shws-trivia-challenge",
+    },
+    {
       id: "ehotels",
       title: t.eHotels.title,
       description: t.eHotels.description,
@@ -36,7 +44,14 @@ export default function Projects() {
       id: "suppliespro",
       title: t.suppliesPro.title,
       description: t.suppliesPro.description,
-      stack: ["React", "React Router", "JavaScript", "CSS", "Font Awesome", "GitHub Pages"],
+      stack: [
+        "React",
+        "React Router",
+        "JavaScript",
+        "CSS",
+        "Font Awesome",
+        "GitHub Pages",
+      ],
       live: "https://Ilyas-Ait-Ali.github.io/SuppliesPro-Website",
       repo: "https://github.com/Ilyas-Ait-Ali/SuppliesPro-Website",
     },
@@ -49,7 +64,7 @@ export default function Projects() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.45 }}
     >
-      {/* Background polish (same as other pages) */}
+      {/* Background polish */}
       <div className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[900px] h-[900px] rounded-full bg-blue-500/12 blur-3xl dark:bg-blue-400/10" />
       <div className="pointer-events-none absolute inset-0 opacity-[0.06] dark:opacity-[0.03] bg-[radial-gradient(circle_at_1px_1px,rgba(0,0,0,0.35)_1px,transparent_1px)] [background-size:18px_18px]" />
 
@@ -126,7 +141,7 @@ function ProjectSection({ t, projectList }) {
                   className="flex items-center gap-1 text-blue-600 dark:text-blue-400 hover:underline"
                 >
                   <ExternalLink size={16} />
-                  {t.suppliesPro.live}
+                  {t.live}
                 </a>
               )}
 
@@ -137,7 +152,7 @@ function ProjectSection({ t, projectList }) {
                 className="flex items-center gap-1 text-blue-600 dark:text-blue-400 hover:underline"
               >
                 <Github size={16} />
-                {t.suppliesPro.github}
+                {t.github}
               </a>
             </div>
           </motion.div>
