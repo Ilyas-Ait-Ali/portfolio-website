@@ -1,18 +1,18 @@
-# 🛠️ Personal Portfolio Website
+# Personal Portfolio Website
 
 This is my personal developer portfolio built using **React** and **Vite**.  
 It showcases my **projects**, **experience**, **resume**, and **contact information** in a clean, bilingual interface (English/French).
 
 ---
 
-## 🌐 Live Demo
-👉 [Live Site](https://ilyas-ait-ali-website.netlify.app)
+## Live Demo
+[Live Site](https://ilyas-ait-ali-website.netlify.app)
 
 ![Demo Screenshot](assets/demo.png)
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 - **React 19**
 - **Vite**
 - **Tailwind CSS**
@@ -23,7 +23,7 @@ It showcases my **projects**, **experience**, **resume**, and **contact informat
 
 ---
 
-## 📦 Getting Started (for development)
+## Getting Started (for development)
 
 ```bash
 npm install
@@ -33,7 +33,7 @@ Visit http://localhost:5173 in your browser.
 
 ---
 
-## 📄 License
+## License
 This project is licensed under the MIT License.
 - You are free to use, modify, and distribute this software with minimal restrictions.
 - Just retain the original license and disclaimer in any copies or substantial portions of the code.
@@ -41,7 +41,7 @@ SPDX-License-Identifier: MIT
 
 ---
 
-## 🛡️ Why MIT?
+## Why MIT?
 - I chose the MIT License because it reflects the goal of this portfolio:
 to share clean, practical, and professional code openly.
 - It supports learning, reusability, and contribution without legal friction.
