@@ -9,6 +9,22 @@ export default function Projects() {
 
   const projectList = [
     {
+      id: "telecomautomation",
+      title: t.telecomAutomation.title,
+      description: t.telecomAutomation.description,
+      stack: ["Python", "FastAPI", "PyTest", "Docker", "GitHub Actions"],
+      live: null,
+      repo: "https://github.com/Ilyas-Ait-Ali/telecom-test-automation",
+    },
+    {
+      id: "rankpi",
+      title: t.ranKpi.title,
+      description: t.ranKpi.description,
+      stack: ["Python", "Pandas", "SQLite", "Docker", "PyTest"],
+      live: null,
+      repo: "https://github.com/Ilyas-Ait-Ali/5g-ran-log-analytics",
+    },
+    {
       id: "exptrack",
       title: t.expTrack.title,
       description: t.expTrack.description,
@@ -17,20 +33,20 @@ export default function Projects() {
       repo: "https://github.com/Ilyas-Ait-Ali/ExpTrack",
     },
     {
-      id: "anomalyexpenses",
-      title: t.anomalyExpenses.title,
-      description: t.anomalyExpenses.description,
-      stack: ["Python", "Scikit-learn", "Streamlit", "Pandas", "Matplotlib"],
-      live: "https://anomaly-expenses.streamlit.app",
-      repo: "https://github.com/Ilyas-Ait-Ali/Anomaly-Expenses",
-    },
-    {
       id: "shwstrivia",
       title: t.shwsTrivia.title,
       description: t.shwsTrivia.description,
       stack: ["React", "Vite", "TypeScript", "Next.js", "Tailwind CSS"],
       live: "https://shws-trivia-challenge-ilyas.vercel.app",
       repo: "https://github.com/Ilyas-Ait-Ali/shws-trivia-challenge",
+    },
+    {
+      id: "anomalyexpenses",
+      title: t.anomalyExpenses.title,
+      description: t.anomalyExpenses.description,
+      stack: ["Python", "Scikit-learn", "Streamlit", "Pandas", "Matplotlib"],
+      live: "https://anomaly-expenses.streamlit.app",
+      repo: "https://github.com/Ilyas-Ait-Ali/Anomaly-Expenses",
     },
     {
       id: "ehotels",
@@ -64,7 +80,6 @@ export default function Projects() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.45 }}
     >
-      {/* Background polish */}
       <div className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[900px] h-[900px] rounded-full bg-blue-500/12 blur-3xl dark:bg-blue-400/10" />
       <div className="pointer-events-none absolute inset-0 opacity-[0.06] dark:opacity-[0.03] bg-[radial-gradient(circle_at_1px_1px,rgba(0,0,0,0.35)_1px,transparent_1px)] [background-size:18px_18px]" />
 
@@ -107,7 +122,7 @@ function ProjectSection({ t, projectList }) {
             "
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: idx * 0.1 }}
+            transition={{ duration: 0.4, delay: idx * 0.08 }}
           >
             <h2 className="text-2xl font-semibold mb-2 text-gray-900 dark:text-white">
               {project.title}
